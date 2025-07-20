@@ -1,4 +1,4 @@
-<h1 align="center">Hi there, I'm Artyom, embedded programmer</a> 
+<h1 align="center">Hi there, I'm Artyom, an embedded programmer</a> 
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 
 <p align="center">
