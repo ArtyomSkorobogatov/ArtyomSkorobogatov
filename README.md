@@ -18,7 +18,7 @@
 
 ### 🧠 About me
 - Embedded & firmware development  
-- MCU: **STM32 / ESP32**
+- MCU: **STM32 / ESP32 / RP2040**
 - Low-level C, drivers, protocols  
 - Tools for production & diagnostics  
 
@@ -38,6 +38,7 @@
 ### ⚙️ Microcontrollers
 <p>
   <img src="https://img.shields.io/badge/Espressif-E7352C?style=for-the-badge&logo=espressif&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Raspberry_Pi-cd2355.svg?style=for-the-badge&logo=raspberrypi&logoColor=white"/>
   <img src="https://img.shields.io/badge/STM32-STMicroelectronics-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white"/>
 </p>
 
@@ -48,6 +49,7 @@
 - Industrial: Modbus RTU / TCP
 - Network stack: TCP, UDP, HTTP(S), MQTT
 - Services: NTP, SNMP
+- Develop: GDB, DAP
 
 ---
 
