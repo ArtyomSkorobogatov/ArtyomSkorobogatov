@@ -1,0 +1,36 @@
+{
+  "style": "flat-square",
+  "height": 20,
+  "badges": [
+    {
+      "id": "stm32",
+      "label": "STM32",
+      "color": "#03234B",
+      "logo": "stmicroelectronics.svg"
+    },
+    {
+      "id": "esp32",
+      "label": "ESP32",
+      "color": "#74D89A",
+      "logo": "espressif.svg"
+    },
+    {
+      "id": "freertos",
+      "label": "FreeRTOS",
+      "color": "#238636",
+      "logo": "freertos.svg"
+    },
+    {
+      "id": "avr-assembly",
+      "label": "AVR Assembly",
+      "color": "#EE3233",
+      "logo": "microchip.svg"
+    },
+    {
+      "id": "qt6",
+      "label": "Qt 6",
+      "color": "#41CD52",
+      "logo": "qt.svg"
+    }
+  ]
+}
