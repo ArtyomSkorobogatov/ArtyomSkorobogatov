@@ -24,26 +24,6 @@
 
 ---
 
-### 🧩 Languages
-<p>
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/>
-  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CMake-008FBA?style=for-the-badge&logo=cmake&logoColor=white"/>
-</p>
-
----
-
-### ⚙️ Microcontrollers
-<p>
-  <img src="https://img.shields.io/badge/Espressif-E7352C?style=for-the-badge&logo=espressif&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Raspberry_Pi-cd2355.svg?style=for-the-badge&logo=raspberrypi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/STM32-STMicroelectronics-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white"/>
-</p>
-
----
-
 ### 🌐 Protocols & Networking
 - Low-level: UART, SPI, I²C, 1-Wire, CAN
 - Industrial: Modbus RTU / TCP
@@ -53,26 +33,43 @@
 
 ---
 
-### 🧱 Frameworks & Libraries
-<p>
-  <img src="https://img.shields.io/badge/Qt-217346?style=for-the-badge&logo=qt&logoColor=white"/>
-</p>
+### Microcontrollers & Hardware
 
----
+![STM32](https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![ARM](https://img.shields.io/badge/ARM_Cortex--M-0091BD?style=flat-square&logo=arm&logoColor=white)
+![RP2040](https://img.shields.io/badge/RP2040-A22846?style=flat-square&logo=raspberrypi&logoColor=white)
 
-### 🛠️ Tools & IDEs
-<p>
-  <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Eclipse-FE7A16?style=for-the-badge&logo=eclipse&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white&labelColor=green"/>
-  <img src="https://img.shields.io/badge/VS_Code-0078D7?style=for-the-badge&logo=visual-studio-code&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Notepad++-90E59A?style=for-the-badge&logo=notepad%2B%2B&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Wireshark-Analysis-1679A7?style=for-the-badge&logo=wireshark&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Logic_Analyzer-Debug-444?style=for-the-badge"/>
-</p>
+### Frameworks & Operating Systems
 
----
+![Qt](https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt&logoColor=white)
+![ESP-IDF](https://img.shields.io/badge/ESP--IDF-E7352C?style=flat-square&logo=espressif&logoColor=white)
+![MicroPython](https://img.shields.io/badge/MicroPython-2B2728?style=flat-square&logo=micropython&logoColor=white)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-238636?style=flat-square&logo=freertos&logoColor=white)
+![Zephyr](https://img.shields.io/badge/Zephyr_RTOS-643B9F?style=flat-square)
+![Embedded Linux](https://img.shields.io/badge/Embedded_Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Buildroot](https://img.shields.io/badge/Buildroot-35495E?style=flat-square)
+
+### Programming Languages
+
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![ARM_Assembly](https://img.shields.io/badge/ARM_Assembly-0091BD?style=flat-square&logo=arm&logoColor=white)
+![AVR Assembly](https://img.shields.io/badge/AVR_Assembly-EE3233?style=flat-square&logo=microchip&logoColor=white)
+
+### Development & Debugging Tools
+
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat-square&logo=cmake&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![CLion](https://img.shields.io/badge/CLion-000000?style=flat-square&logo=clion&logoColor=white)
+![PyCharm](https://img.shields.io/badge/PyCharm-000000?style=flat-square&logo=pycharm&logoColor=white)
+![Zed](https://img.shields.io/badge/Zed-084CCF?style=flat-square&logo=zedindustries&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+![GDB](https://img.shields.io/badge/GDB-555555?style=flat-square)
+![OpenOCD](https://img.shields.io/badge/OpenOCD-555555?style=flat-square)
+
 
 <p align="center">
   <i>Low-level first. Datasheet before StackOverflow.</i>
