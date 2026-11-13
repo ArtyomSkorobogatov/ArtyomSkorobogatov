@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="74" height="20" viewBox="0 0 74 20" role="img" aria-label="STM32">
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="20" viewBox="0 0 86 20" role="img" aria-label="STM32">
   <title>STM32</title>
-  <rect width="74" height="20" fill="#03234B"/>
+  <rect width="86" height="20" fill="#03234B"/>
+  <rect width="32" height="20" fill="#FFFFFF"/>
   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Logo" x="9" y="3" viewBox="0 0 280 193" style="enable-background:new 0 0 280 193;" xml:space="preserve" width="14" height="14" preserveAspectRatio="xMidYMid meet">
 <style type="text/css">
 	.st0{fill:#03234B;}
@@ -11,5 +12,5 @@
 	<path class="st0" d="M173.3423309,80.9340897c0-0.7775726-0.6386414-1.4018021-1.4229736-1.4018021h-65.4285736   c-3.545639,0-6.6524811,4.3629303-2.8959045,7.8230515l21.6176376,20.1150436c0,0,8.7547531,8.0661774,6.8769455,19.6072922   c-1.6559296,10.1625595-8.5904846,16.3847427-13.6065369,18.6225967l-0.0135345,0.0033875   c-0.1203003,0.0609741-0.1999207,0.1829224-0.1999207,0.3133698c0,0.194809,0.1558609,0.3523102,0.3557892,0.3523102   l25.2153168,0.0033875c1.5602722,0,2.8984985-0.9384766,3.4542236-2.2852173l25.9526367-62.6545105   C173.3085022,81.2737503,173.3423309,81.1085205,173.3423309,80.9340897z" />
 </g>
 </svg>
-  <text x="29" y="14.0" fill="#FFFFFF" font-family="Arial,DejaVu Sans,sans-serif" font-size="11.0" font-weight="600">STM32</text>
+  <text x="41" y="14.0" fill="#FFFFFF" font-family="Arial,DejaVu Sans,sans-serif" font-size="11.0" font-weight="600">STM32</text>
 </svg>

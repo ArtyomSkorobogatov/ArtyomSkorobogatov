@@ -67,37 +67,55 @@ def generate_badge(item, config, logos_dir):
         raise ValueError(f'{badge_id}: label must be a nonempty string')
     if any(ord(c) < 32 for c in label):
         raise ValueError(f'{badge_id}: control characters in label')
-    bg = validate_color(item.get('color'), f'{badge_id}.color')
+    # Backward compatible: "color" remains the label background fallback.
+    label_bg = validate_color(
+        item.get('label_background', item.get('color')),
+        f'{badge_id}.label_background')
+    logo_bg = validate_color(
+        item.get('logo_background', label_bg),
+        f'{badge_id}.logo_background')
     fg = validate_color(item.get('text_color', '#FFFFFF'), f'{badge_id}.text_color')
     height = config.get('height', 20)
-    if not isinstance(height, int) or not 16 <= height <= 80:
+    if type(height) is not int or not 16 <= height <= 80:
         raise ValueError('height must be an integer from 16 to 80')
     font_size = round(height * .55, 1)
     padding = round(height * .45)
     logo_size = round(height * .72)
-    gap = round(height * .3)
     logo_name = item.get('logo')
     logo_xml = ''
+    logo_section_width = 0
     if logo_name is not None:
-        if not isinstance(logo_name, str) or Path(logo_name).name != logo_name or not logo_name.lower().endswith('.svg'):
+        if (not isinstance(logo_name, str) or Path(logo_name).name != logo_name
+                or not logo_name.lower().endswith('.svg')):
             raise ValueError(f'{badge_id}: logo must be an SVG filename without directories')
         path = logos_dir / logo_name
         if not path.is_file():
             raise FileNotFoundError(f'{badge_id}: logo not found: {path}')
-        logo_xml = svg_logo(path, padding, (height-logo_size)//2, logo_size)
-    text_x = padding + (logo_size + gap if logo_xml else 0)
+        logo_section_width = logo_size + 2 * padding
+        logo_xml = svg_logo(path, padding, (height - logo_size) // 2, logo_size)
+    text_x = logo_section_width + padding
     width = int(text_x + text_width(label, font_size) + padding + 2.5)
     baseline = round(height * .70, 2)
     safe_label = escape(label, {'"': '&quot;'})
-    return (f'<svg xmlns="{SVG_NS}" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{safe_label}">\n'
-            f'  <title>{safe_label}</title>\n'
-            f'  <rect width="{width}" height="{height}" fill="{bg}"/>\n'
-            f'  {logo_xml}\n' if logo_xml else
-            f'<svg xmlns="{SVG_NS}" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{safe_label}">\n'
-            f'  <title>{safe_label}</title>\n'
-            f'  <rect width="{width}" height="{height}" fill="{bg}"/>\n') + (
-            f'  <text x="{text_x}" y="{baseline}" fill="{fg}" font-family="Arial,DejaVu Sans,sans-serif" font-size="{font_size}" font-weight="600">{safe_label}</text>\n'
-            f'</svg>\n')
+    parts = [
+        f'<svg xmlns="{SVG_NS}" width="{width}" height="{height}" '
+        f'viewBox="0 0 {width} {height}" role="img" aria-label="{safe_label}">',
+        f'  <title>{safe_label}</title>',
+        f'  <rect width="{width}" height="{height}" fill="{label_bg}"/>',
+    ]
+    if logo_xml:
+        parts.extend([
+            f'  <rect width="{logo_section_width}" height="{height}" fill="{logo_bg}"/>',
+            f'  {logo_xml}',
+        ])
+    parts.extend([
+        f'  <text x="{text_x}" y="{baseline}" fill="{fg}" '
+        f'font-family="Arial,DejaVu Sans,sans-serif" font-size="{font_size}" '
+        f'font-weight="600">{safe_label}</text>',
+        '</svg>',
+        '',
+    ])
+    return '\n'.join(parts)
 
 
 def main():

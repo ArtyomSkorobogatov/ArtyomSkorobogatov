@@ -1,3 +1,4 @@
+
 {
   "style": "flat-square",
   "height": 20,
@@ -5,31 +6,41 @@
     {
       "id": "stm32",
       "label": "STM32",
-      "color": "#03234B",
+      "label_background": "#03234B",
+      "logo_background": "#FFFFFF",
+      "text_color": "#FFFFFF",
       "logo": "stmicroelectronics.svg"
     },
     {
       "id": "esp32",
       "label": "ESP32",
-      "color": "#74D89A",
+      "label_background": "#E7352C",
+      "logo_background": "#FFFFFF",
+      "text_color": "#FFFFFF",
       "logo": "espressif.svg"
-    },
-    {
-      "id": "freertos",
-      "label": "FreeRTOS",
-      "color": "#238636",
-      "logo": "freertos.svg"
     },
     {
       "id": "avr-assembly",
       "label": "AVR Assembly",
-      "color": "#EE3233",
+      "label_background": "#EE3233",
+      "logo_background": "#FFFFFF",
+      "text_color": "#FFFFFF",
       "logo": "microchip.svg"
+    },
+    {
+      "id": "freertos",
+      "label": "FreeRTOS",
+      "label_background": "#238636",
+      "logo_background": "#FFFFFF",
+      "text_color": "#FFFFFF",
+      "logo": "freertos.svg"
     },
     {
       "id": "qt6",
       "label": "Qt 6",
-      "color": "#41CD52",
+      "label_background": "#41CD52",
+      "logo_background": "#FFFFFF",
+      "text_color": "#FFFFFF",
       "logo": "qt.svg"
     }
   ]

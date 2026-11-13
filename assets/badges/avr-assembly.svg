@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="111" height="20" viewBox="0 0 111 20" role="img" aria-label="AVR Assembly">
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="20" viewBox="0 0 123 20" role="img" aria-label="AVR Assembly">
   <title>AVR Assembly</title>
-  <rect width="111" height="20" fill="#EE3233"/>
+  <rect width="123" height="20" fill="#EE3233"/>
+  <rect width="32" height="20" fill="#FFFFFF"/>
   <svg xmlns="http://www.w3.org/2000/svg" version="1.2" viewBox="0 0 1582 1498" width="14" height="14" x="9" y="3" preserveAspectRatio="xMidYMid meet">
 	<title>Microchip_logo-svg</title>
 	<defs>
@@ -29,5 +30,5 @@
 		</g>
 	</g>
 </svg>
-  <text x="29" y="14.0" fill="#FFFFFF" font-family="Arial,DejaVu Sans,sans-serif" font-size="11.0" font-weight="600">AVR Assembly</text>
+  <text x="41" y="14.0" fill="#FFFFFF" font-family="Arial,DejaVu Sans,sans-serif" font-size="11.0" font-weight="600">AVR Assembly</text>
 </svg>
